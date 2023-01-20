@@ -8,7 +8,7 @@
 }
 
 body{
-    padding: 4rem;
+    padding: 1rem;
     display: grid;
     place-items: center;
    
@@ -105,10 +105,6 @@ body{
 }
 
 @media screen and (max-width: 500px) {
-    body{
-        padding: 1rem;
-    }
-
     .cads{
         flex-direction: column;
     
