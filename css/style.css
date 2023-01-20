@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    padding: 4rem;
+    display: grid;
+    place-items: center;
+   
+}
+
+.cards{
+    margin: 0 auto;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card-1, .card-2, .card-3{
+    width: 300px;
+    height: 450px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 1rem 1rem 0;
+}
+
+.title img{
+    width: 60px;
+    padding-bottom: 1rem;
+}
+
+.title h2{
+    font-family: 'Big Shoulders Display', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
+
+.text{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 2rem 0;
+    width: 100%;
+    text-align: start;
+}
+
+.button{
+    background-color: white;
+    border-radius: 50px;
+    width: 8rem;
+    height: 2.5rem;
+    text-align: center;
+    border: solid white;
+    transition: 0.3s;
+}
+
+.button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+.button a{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.4rem ;
+    text-decoration: none;   
+    color: black
+}
+
+#color-1 a{
+    color: hsl(31, 77%, 52%);
+}
+
+#color-2 a{
+    color: hsl(184, 100%, 22%);
+}
+
+
+#color-3 a{
+    color: hsl(179, 100%, 13%);
+}
+
+#color-1:hover a, #color-2:hover a, #color-3:hover a{
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        padding: 1rem;
+    }
+
+    .cads{
+        flex-direction: column;
+    
+    }
+
+    .card-1, .card-2, .card-3{
+        width: 100%;
+        height: 650px;
+    }
+
+    .card-1{
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .card-3{
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .title img{
+        width: 100px;
+    }
+    
+    .title h2{
+        font-size: 2.5rem;
+    }
+    
+    .text{
+        font-size: 1.5rem;
+    }
+    
+    .button{
+        width: 12rem;
+        height: 3.5rem;
+    }
+
+    .button a{
+        margin-top: 0.9rem;
+        font-size: 1.23rem;
+    }
+}
